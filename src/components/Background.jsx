@@ -2,7 +2,7 @@ function Background() {
     return (
         <div className="background">
             <video autoPlay muted loop id="bgVideo">
-                <source src="/src/assets/bg.webm" type="video/webm" />
+                <source src='/bg.webm' type="video/webm" />
             </video>
         </div>
     )
