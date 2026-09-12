@@ -4,6 +4,7 @@
     --primary-color: #FF9175;
     --secondary-color: #FD1D1D;
     --text-color: #d6d6d6;
+    --transparent-text: #45454594;
     --color-gradient: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
 }
 .manufacturing-consent-regular {
@@ -112,8 +113,8 @@
     left: 20px;
     font-family: 'Manufacturing Consent';
     font-size: 50px;
-    color: rgba(94, 93, 93, 0.363);
-    -webkit-text-stroke: 2px transparent;
+    color: var(--transparent-text);
+    -webkit-text-stroke: 4px transparent;
 
     background: var(--color-gradient);
     background-size: 200% auto;
