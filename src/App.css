@@ -51,6 +51,8 @@
 
 .content .medium-text {
     color: var(--text-color);
+    margin: 0;
+    display: inline-block
 }
 
 .cookie {
@@ -59,16 +61,10 @@
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
+    animation:shift-gradient 4s linear infinite;
 }
 
-.cookie:hover {
-    background: var(--color-gradient);
-    color: transparent;
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation:shift-gradient 1s linear infinite;
-}
+
 
 
 /*---------- Background CSS ----------*/
