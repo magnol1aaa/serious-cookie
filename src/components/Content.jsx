@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 function Content() {
-    const mousePosition = useMousePosition();
 
     const cookieRef = useRef(null);
     const [rotation, setRotation] = useState({x: 0, y: 0});
@@ -30,7 +29,6 @@ function Content() {
         setRotation({x: 0, y: 0})
     }
     return (
-
         <div className = "content">
             <main>
                 <h2 className="medium-text">welcome to serious
@@ -48,31 +46,12 @@ function Content() {
                             </span>
                     </span>
                 </h2>
-                <p className="extra">{JSON.stringify(mousePosition)}</p>
             </main>
+            <div className="learn-more">
+            <h3 className="small-text"> learn more</h3>
+            </div>
         </div>
     )
 }
-
-const useMousePosition = () => {
-  const [
-    mousePosition,
-    setMousePosition
-  ] = React.useState({ x: null, y: null });
-
-  React.useEffect(() => {
-    const updateMousePosition = ev => {
-      setMousePosition({ x: ev.clientX, y: ev.clientY });
-    };
-    
-    window.addEventListener('mousemove', updateMousePosition);
-
-    return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-    };
-  }, []);
-
-  return mousePosition;
-};
 
 export default Content

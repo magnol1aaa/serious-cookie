@@ -19,24 +19,50 @@
     font-size: 50px;
 }
 
+.small-text {
+    font-family: 'sans-serif';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.learn-more {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.learn-more .small-text {
+    color: var(--text-color);
+    width: auto;
+    text-align: center;
+    
+}
+
+.small-text:hover {
+
+    color: transparent;
+    background: var(--color-gradient);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    animation: shift-gradient 4s linear infinite;
+}
 /*------- Sites Flex Container -------*/
 .app {
     display: flex;
-    flex-direction: row;
     flex-grow: 1;
+    flex-direction: row;
     position: relative;
-    height: auto;
-    width: auto;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .site-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 100vw;
-    justify-content: center;
 }
 
 
@@ -46,13 +72,13 @@
     background: none;
     text-align: center;
     z-index: 2;
-    
+    width: 100vw;
 }
 
 .content .medium-text {
     color: var(--text-color);
     margin: 0;
-    display: inline-block
+    display: inline-block;
 }
 
 .cookie {
@@ -141,3 +167,4 @@
     background-position: 200% 50%;
   }
 }
+
