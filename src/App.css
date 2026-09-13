@@ -4,7 +4,7 @@
     --primary-color: #FF9175;
     --secondary-color: #FD1D1D;
     --text-color: #d6d6d6;
-    --transparent-text: #45454594;
+    --transparent-text: #11111167;
     --color-gradient: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
 }
 .manufacturing-consent-regular {
